@@ -1,0 +1,60 @@
+:root {
+    --fonte-familia-principal: "Raleway", sans-serif;
+
+    --largura-mobile: 360px;
+    --largura-tablet: 768px;
+    --largura-desktop: 1440px;
+
+    --cor-primaria: #2A7AE4;
+    --cor-secundaria: #F5F5F5;
+    --cor-terciaria: #000000;
+    --cor-titulo-preto: #464646;
+    --cor-preto50: #A2A2A2;
+    --cor-branco: #FFFFFF;
+    --cor-azul10: #EAF2FD;
+    --cor-preto-login: #f8f7f7;
+    --cor-destacado-item: rgb(212, 228, 250);
+    --cor-sucesso: #047900;
+    --cor-aviso: #DF2525;
+
+    --cor-transparencia: #4d4d4d33;
+    --sombra: 0 5px 10px #55a6ff38;
+
+
+
+    --fonte-peso-input: 400;
+
+    --fonte-tamanho-logo: 28px;
+    --fonte-tamanho-cartao-titulo: 28px;
+    --fonte-tamanho-input-label: 16px;
+    --fonte-tamanho-botao: 22px;
+    --fonte-tamanho-formulario-fieldset: 22px;
+    --fonte-tamanho-tabela-cabecalho: 22px;
+    --fonte-tamanho-modal-titulo: 28px;
+    --fonte-tamanho-modal-botao: 28px;
+
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    background-color: var(--cor-branco);
+}
+
+
+.container {
+    padding: 16px;
+}
+
+@media screen and (min-width: 361px) and (max-width: 768px) {
+    .container {
+        padding: 32px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        padding: 32px 152px;
+    }
+}

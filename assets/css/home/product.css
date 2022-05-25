@@ -1,0 +1,124 @@
+.products_line {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product-line_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.product-line_top__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--cor-titulo-preto);
+}
+
+.product-line_top__button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: var(--cor-branco);
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+
+.product-line_top__button___arrow {
+    font-family: 'Fira Code', monospace;
+}
+
+.product-line_products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-top: 1rem;
+}
+
+.product-line_products__product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product-line_products__product___image {
+    width: 100%;
+}
+
+.product-line_products__product___title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--cor-terciaria);
+    margin-top: 8px;
+}
+
+.product-line_products__product___price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--cor-terciaria);
+    margin-top: 8px;
+}
+
+.product-line_products__product___link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.product-hidden {
+    display: none;
+}
+
+@media screen and (min-width: 361px) and (max-width: 768px) {
+    .product-line_top__button {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .product-line_products__product___link {
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 8px;
+    }
+
+    .product-line_products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .product-line_top__button {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .product-line_products__product___link {
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 8px;
+    }
+
+    .product-line_products {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .product-hidden {
+        display: flex;
+    }
+}
